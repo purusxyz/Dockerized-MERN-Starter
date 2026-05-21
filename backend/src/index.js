@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 
 
-dotenv.config()
+
 const app = express();
 
 app.use(express.json());
@@ -30,7 +30,6 @@ app.get("/api/message", (req, res) => {
 
 const PORT = 5000;
 
-connectDB()
 
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server is running on port ${PORT}`);
